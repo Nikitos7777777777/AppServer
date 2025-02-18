@@ -53,6 +53,10 @@ namespace ServerApp {
     static readonly grpc::Marshaller<global::ServerApp.MessHistRequest> __Marshaller_dataClient_MessHistRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServerApp.MessHistRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::ServerApp.HistoryMessRespons> __Marshaller_dataClient_HistoryMessRespons = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServerApp.HistoryMessRespons.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::ServerApp.DBMessRequest> __Marshaller_dataClient_DBMessRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ServerApp.DBMessRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::ServerApp.DataRequest, global::ServerApp.DataResponse> __Method_DataReturn = new grpc::Method<global::ServerApp.DataRequest, global::ServerApp.DataResponse>(
@@ -69,6 +73,14 @@ namespace ServerApp {
         "MessageHistoryData",
         __Marshaller_dataClient_MessHistRequest,
         __Marshaller_dataClient_HistoryMessRespons);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::ServerApp.DBMessRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_AddDBMessData = new grpc::Method<global::ServerApp.DBMessRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "AddDBMessData",
+        __Marshaller_dataClient_DBMessRequest,
+        __Marshaller_google_protobuf_Empty);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -92,6 +104,12 @@ namespace ServerApp {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> AddDBMessData(global::ServerApp.DBMessRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -101,7 +119,8 @@ namespace ServerApp {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_DataReturn, serviceImpl.DataReturn)
-          .AddMethod(__Method_MessageHistoryData, serviceImpl.MessageHistoryData).Build();
+          .AddMethod(__Method_MessageHistoryData, serviceImpl.MessageHistoryData)
+          .AddMethod(__Method_AddDBMessData, serviceImpl.AddDBMessData).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -113,6 +132,7 @@ namespace ServerApp {
     {
       serviceBinder.AddMethod(__Method_DataReturn, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServerApp.DataRequest, global::ServerApp.DataResponse>(serviceImpl.DataReturn));
       serviceBinder.AddMethod(__Method_MessageHistoryData, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServerApp.MessHistRequest, global::ServerApp.HistoryMessRespons>(serviceImpl.MessageHistoryData));
+      serviceBinder.AddMethod(__Method_AddDBMessData, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ServerApp.DBMessRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.AddDBMessData));
     }
 
   }

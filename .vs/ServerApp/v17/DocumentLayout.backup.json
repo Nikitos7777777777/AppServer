@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Savva\\source\\repos\\ServerApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|c:\\users\\savva\\source\\repos\\serverapp\\serverapp\\cruddb\\cruduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|solutionrelative:serverapp\\cruddb\\cruduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|c:\\users\\savva\\source\\repos\\serverapp\\serverapp\\services\\clientdataserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|solutionrelative:serverapp\\services\\clientdataserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|c:\\users\\savva\\source\\repos\\serverapp\\serverapp\\cruddb\\crudmessanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|solutionrelative:serverapp\\cruddb\\crudmessanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|c:\\users\\savva\\source\\repos\\serverapp\\serverapp\\services\\clientdataserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|solutionrelative:serverapp\\services\\clientdataserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|c:\\users\\savva\\source\\repos\\serverapp\\serverapp\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|solutionrelative:serverapp\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|c:\\users\\savva\\source\\repos\\serverapp\\serverapp\\protos\\dataclient.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|solutionrelative:serverapp\\protos\\dataclient.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|c:\\users\\savva\\source\\repos\\serverapp\\serverapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|solutionrelative:serverapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|c:\\users\\savva\\source\\repos\\serverapp\\serverapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|solutionrelative:serverapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|c:\\users\\savva\\source\\repos\\serverapp\\serverapp\\protos\\dataclient.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{C3916EB7-74F9-4B8A-893C-5652DC1FF964}|ServerApp\\ServerApp.csproj|solutionrelative:serverapp\\protos\\dataclient.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,16 +74,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CRUDUser.cs",
-              "DocumentMoniker": "C:\\Users\\Savva\\source\\repos\\ServerApp\\ServerApp\\CRUDdb\\CRUDUser.cs",
-              "RelativeDocumentMoniker": "ServerApp\\CRUDdb\\CRUDUser.cs",
-              "ToolTip": "C:\\Users\\Savva\\source\\repos\\ServerApp\\ServerApp\\CRUDdb\\CRUDUser.cs",
-              "RelativeToolTip": "ServerApp\\CRUDdb\\CRUDUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Savva\\source\\repos\\ServerApp\\ServerApp\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ServerApp\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Savva\\source\\repos\\ServerApp\\ServerApp\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ServerApp\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-18T15:40:24.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\Savva\\source\\repos\\ServerApp\\ServerApp\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "ServerApp\\Models\\Message.cs",
+              "ToolTip": "C:\\Users\\Savva\\source\\repos\\ServerApp\\ServerApp\\Models\\Message.cs",
+              "RelativeToolTip": "ServerApp\\Models\\Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T17:07:30.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T14:01:08.563Z"
             },
             {
               "$type": "Document",
@@ -89,31 +104,32 @@
               "RelativeDocumentMoniker": "ServerApp\\CRUDdb\\CRUDMessanges.cs",
               "ToolTip": "C:\\Users\\Savva\\source\\repos\\ServerApp\\ServerApp\\CRUDdb\\CRUDMessanges.cs",
               "RelativeToolTip": "ServerApp\\CRUDdb\\CRUDMessanges.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T17:04:44.921Z"
+              "WhenOpened": "2025-02-18T13:31:37.93Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ClientDataServer.cs",
               "DocumentMoniker": "C:\\Users\\Savva\\source\\repos\\ServerApp\\ServerApp\\Services\\ClientDataServer.cs",
               "RelativeDocumentMoniker": "ServerApp\\Services\\ClientDataServer.cs",
               "ToolTip": "C:\\Users\\Savva\\source\\repos\\ServerApp\\ServerApp\\Services\\ClientDataServer.cs",
               "RelativeToolTip": "ServerApp\\Services\\ClientDataServer.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAawEkAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAuwHoAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T20:03:41.323Z"
+              "WhenOpened": "2025-02-09T20:03:41.323Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "dataClient.proto",
               "DocumentMoniker": "C:\\Users\\Savva\\source\\repos\\ServerApp\\ServerApp\\Protos\\dataClient.proto",
               "RelativeDocumentMoniker": "ServerApp\\Protos\\dataClient.proto",
               "ToolTip": "C:\\Users\\Savva\\source\\repos\\ServerApp\\ServerApp\\Protos\\dataClient.proto",
               "RelativeToolTip": "ServerApp\\Protos\\dataClient.proto",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
               "WhenOpened": "2025-02-16T16:28:55.428Z"
             },
@@ -125,7 +141,7 @@
               "RelativeDocumentMoniker": "ServerApp\\Program.cs",
               "ToolTip": "C:\\Users\\Savva\\source\\repos\\ServerApp\\ServerApp\\Program.cs",
               "RelativeToolTip": "ServerApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-06T07:38:50.614Z"
             }

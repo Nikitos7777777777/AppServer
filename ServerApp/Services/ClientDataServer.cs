@@ -6,6 +6,9 @@ using ServerApp.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Google.Protobuf.WellKnownTypes;
+using Google.Protobuf.Reflection;
+using System.Reflection;
 
 namespace ServerApp.Services
 {
@@ -107,6 +110,22 @@ namespace ServerApp.Services
             return histMess;
         }
 
+        public override async Task<Empty> AddDBMessData(DBMessRequest request, ServerCallContext context)
+        {
+            var user = await _CRUDUser.GetUniqueUser(request.UserSender);
+
+            DateTime dbTime = DateTime.SpecifyKind(request.SendAt.ToDateTime(), DateTimeKind.Unspecified);
+
+            var mess = new Message()
+            {
+                ChannelName = request.ChannelName,
+                Sender = user,
+                MessageText = request.MessangeText,
+                SentAt = dbTime,
+            };
+            await _CRUDMessanges.AddMessHist(mess);
+            return new Empty();
+        }
         public string ValidToken(string token)
         {
             string username = null;

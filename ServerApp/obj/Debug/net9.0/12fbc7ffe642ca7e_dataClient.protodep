@@ -1,2 +1,4 @@
 obj\Debug\net9.0\Protos/DataClient.cs \
-obj\Debug\net9.0\Protos/DataClientGrpc.cs: Protos/dataClient.proto
+obj\Debug\net9.0\Protos/DataClientGrpc.cs: C:/Users/Savva/.nuget/packages/grpc.tools/2.69.0/build/native/include/google/protobuf/empty.proto\
+ C:/Users/Savva/.nuget/packages/grpc.tools/2.69.0/build/native/include/google/protobuf/timestamp.proto\
+ Protos/dataClient.proto

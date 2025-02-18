@@ -4,10 +4,14 @@ option csharp_namespace = "ServerApp";
 
 package dataClient;
 
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+
 service ClientData {
 
 	rpc DataReturn (DataRequest) returns (DataResponse);
     rpc MessageHistoryData (MessHistRequest) returns (HistoryMessRespons);
+    rpc AddDBMessData (DBMessRequest) returns (google.protobuf.Empty);
 }
 
 //Объекты//
@@ -43,5 +47,14 @@ message DataResponse {
 }
 message HistoryMessRespons{
     repeated messageItem listMess = 1;
+}
+message DBMessRequest{
+    string channelName = 1;
+    string userSender = 2;
+    string messangeText = 3;
+    google.protobuf.Timestamp sendAt = 4; 
+}
+message DBMessRespons{
+
 }
 //Запросы, ответы//

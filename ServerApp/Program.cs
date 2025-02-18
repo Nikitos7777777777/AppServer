@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.EntityFrameworkCore;
 using ServerApp.CRUDdb;
 using ServerApp.Models;
@@ -11,6 +12,14 @@ using ServerApp.Services;
 //app.Run();
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(5000, listenOptions =>
+    {
+        listenOptions.Protocols = HttpProtocols.Http2;
+    });
+});
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 

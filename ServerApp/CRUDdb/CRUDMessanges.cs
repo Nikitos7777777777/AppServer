@@ -16,5 +16,10 @@ namespace ServerApp.CRUDdb
         {
             return await _context.Messages.Include(u => u.Sender).ToListAsync();
         }
+        public async Task AddMessHist(Message mess)
+        {
+            _context.Messages.Add(mess);
+            await _context.SaveChangesAsync();
+        }
     }
 }

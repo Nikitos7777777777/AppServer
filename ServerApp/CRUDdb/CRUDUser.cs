@@ -35,5 +35,9 @@ namespace ServerApp.CRUDdb
             }
             return list;
         }
+        public async Task<User> GetUniqueUser(string username)
+        {
+            return await _context.Users.SingleOrDefaultAsync(u => u.Username == username);
+        }
     }
 }

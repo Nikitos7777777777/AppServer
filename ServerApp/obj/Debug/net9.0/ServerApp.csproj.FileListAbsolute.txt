@@ -121,3 +121,4 @@ C:\Users\Savva\source\repos\ServerApp\ServerApp\bin\Debug\net9.0\zh-Hant\Microso
 C:\Users\Savva\source\repos\ServerApp\ServerApp\bin\Debug\net9.0\Npgsql.dll
 C:\Users\Savva\source\repos\ServerApp\ServerApp\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\Savva\source\repos\ServerApp\ServerApp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\Savva\source\repos\ServerApp\ServerApp\obj\Debug\net9.0\ServerApp.sourcelink.json

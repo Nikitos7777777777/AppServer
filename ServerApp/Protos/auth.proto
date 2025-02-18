@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "ServerApp";
+
+package auth;
+
+service AuthValid {
+
+	rpc ValidAuthorization (AuthorizationRequest) returns (AuthorizationResponse);
+}
+
+message AuthorizationRequest {
+    string username = 1;
+    string userpassword = 2;
+}
+
+message AuthorizationResponse {
+    string permission = 1;
+    string token = 2;
+}
+
+

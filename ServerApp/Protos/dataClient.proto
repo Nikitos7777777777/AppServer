@@ -1,0 +1,47 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "ServerApp";
+
+package dataClient;
+
+service ClientData {
+
+	rpc DataReturn (DataRequest) returns (DataResponse);
+    rpc MessageHistoryData (MessHistRequest) returns (HistoryMessRespons);
+}
+
+//Объекты//
+message UserItem{
+    string username = 1;
+    string email = 2;
+    string avatar = 3;
+    string createAt = 4;
+    string personalChannel = 5;
+}
+message messageItem{
+    string nameChannel = 1;
+    UserItem userSender = 2;
+    string textMess = 3;
+    string sendAt = 4;
+}
+//Объекты//
+
+//Запросы, ответы//
+message DataRequest {
+    string token = 1;
+}
+message MessHistRequest {
+    string token = 1;
+    string channelName = 2;
+}
+message DataResponse {
+    string username = 1;
+    string email = 2;
+    string avatar = 3;
+    string createAt = 4;
+    repeated UserItem friends = 5;
+}
+message HistoryMessRespons{
+    repeated messageItem listMess = 1;
+}
+//Запросы, ответы//

@@ -1,0 +1,2 @@
+obj\Debug\net9.0\Protos/DataClient.cs \
+obj\Debug\net9.0\Protos/DataClientGrpc.cs: Protos/dataClient.proto

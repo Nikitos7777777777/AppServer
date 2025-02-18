@@ -1,0 +1,59 @@
+﻿syntax = "proto3";
+	
+option csharp_namespace = "ServerApp";
+
+package greet;
+
+service Chat {
+	//rpc SayHello (MessageRequest) returns (MessageResponse);
+	//rpc ChatStream (stream ChatMessage) returns (stream ChatMessage);
+
+	// Подключение к чату (stream - двусторонний поток)
+	rpc JoinChat (JoinRequest) returns (stream ChatMessage);
+
+	// Отправка сообщения в чат
+	rpc SendMessage (SendMessageRequest) returns (SendMessageResponse);
+}
+
+// Запрос на подключение к чату
+message JoinRequest {
+  string username = 1;
+}
+
+// Запрос на отправку сообщения
+message SendMessageRequest {
+  string username = 1;
+  string message = 2;
+}
+
+// Ответ сервера на отправку сообщения
+message SendMessageResponse {
+  bool success = 1;
+}
+
+// Сообщение в чате
+message ChatMessage {
+  string username = 1;
+  string message = 2;
+}
+
+//message ChatMessage {
+  //string username = 1;
+  //string text = 2;
+  //string timestamp = 3;
+//}
+
+//message MessageRequest {
+  //string user = 1;
+  //string message = 2;
+//}
+
+//message MessageResponse {
+  //string response = 1;
+//}
+
+// Запрос для подписки (например, имя клиента)
+//message SubscribeRequest {
+  //string client_id = 1;
+//}
+

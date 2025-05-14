@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>b37c46be-4a42-4f83-b504-6b1f64ccab8d</UserSecretsId>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,6 +27,7 @@
     <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
 	<Protobuf Include="Protos\auth.proto" GrpcServices="Server" />
 	<Protobuf Include="Protos\dataClient.proto" GrpcServices="Server" />
+	<Protobuf Include="Protos\SendingNotificationsProto.proto" GrpcServices="Server" />
   </ItemGroup>
 	
   <ItemGroup>

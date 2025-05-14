@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "ServerApp";
+
+package SendingNotificationProto;
+
+service CreatSendingNotificationProto{
+	rpc SendOffer (MessangeCall) returns (ResponsCall);
+	rpc SendAnswer (MessangeCall) returns (ResponsCall);
+	rpc StreamMessages (StreamRequest) returns (stream SignalingMessage);
+}
+
+message MessangeCall{
+	string FromClient = 1;
+    string ToClient = 2;
+    string type = 3;
+    string UDPPort = 4;
+    string UDPIp = 5;
+}
+
+message StreamRequest {
+  string clientId = 1;
+}
+
+message SignalingMessage{
+	MessangeCall ms = 1;
+}
+
+message ResponsCall{
+    bool Success = 1;
+}

@@ -33,6 +33,7 @@ var app = builder.Build();
 app.MapGrpcService<ChatService>();
 app.MapGrpcService<ÑonnectionServer>();
 app.MapGrpcService<ClientDataServer>();
+app.MapGrpcService<SendingNotificationsService>();
 
 app.Run();
 

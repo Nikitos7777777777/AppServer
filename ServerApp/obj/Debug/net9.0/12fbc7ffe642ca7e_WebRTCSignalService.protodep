@@ -1,0 +1,2 @@
+obj\Debug\net9.0\Protos/WebRTCSignalService.cs \
+obj\Debug\net9.0\Protos/WebRTCSignalServiceGrpc.cs: Protos/WebRTCSignalService.proto

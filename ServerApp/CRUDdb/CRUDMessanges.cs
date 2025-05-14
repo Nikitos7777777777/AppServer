@@ -14,7 +14,7 @@ namespace ServerApp.CRUDdb
 
         public async Task<List<Message>> GetMessagesChannel()
         {
-            return await _context.Messages.Include(u => u.Sender).ToListAsync();
+            return await _context.Messages.Include(u => u.Sender).OrderBy(m => m.SentAt).ToListAsync();
         }
         public async Task AddMessHist(Message mess)
         {
